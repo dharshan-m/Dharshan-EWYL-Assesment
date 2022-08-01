@@ -5,7 +5,7 @@
 .image{
     padding: 20px;
     width: 30%;
-    border-radius: 20%;
+    border-radius: 50%;
     height: 10%;
     filter: brightness(150%);
     filter: contrast(150%);
@@ -15,6 +15,11 @@
 button{
     margin-left: 50%;
     margin-top: 10%;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(221, 167, 218);
 }
 
 .loading{
@@ -24,18 +29,40 @@ button{
 }
 
 .name{
-    text-shadow: 2px 2px 4px rgba(13, 40, 244, 0.95);
+    text-shadow: 2px 2px 4px hwb(232 0% 0%);
+}
+
+.name:hover{
+    background-color: rgb(199, 145, 196);
+    border-radius: 5px;
 }
 
 .email{
-    text-shadow: 2px 2px 4px rgba(13, 40, 244, 0.95);
+    text-shadow: 2px 2px 4px rgb(1, 31, 254);
+}
+
+.email:hover{
+    background-color: rgb(199, 145, 196);
+    border-radius: 5px;
 }
 
 .gender{
     text-shadow: 2px 2px 4px rgba(13, 40, 244, 0.95);
 }
 
-.container{
+.gender:hover{
+    background-color: rgb(199, 145, 196);
+    border-radius: 5px;
+}
+
+.content-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: rgb(89, 200, 196);
+    border-radius: 10%;
+}
+
+.main{
+    margin-top: 170px;
+    margin-left: 100px;
 }
