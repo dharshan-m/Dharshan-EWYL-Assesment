@@ -2,3 +2,40 @@
     margin: 0;
     padding: 0;
 }
+.image{
+    padding: 20px;
+    width: 30%;
+    border-radius: 20%;
+    height: 10%;
+    filter: brightness(150%);
+    filter: contrast(150%);
+    filter: drop-shadow(10px 10px 10px rgb(6, 6, 6));
+
+}
+button{
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.loading{
+    border-radius: 20%;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.name{
+    text-shadow: 2px 2px 4px rgba(13, 40, 244, 0.95);
+}
+
+.email{
+    text-shadow: 2px 2px 4px rgba(13, 40, 244, 0.95);
+}
+
+.gender{
+    text-shadow: 2px 2px 4px rgba(13, 40, 244, 0.95);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
