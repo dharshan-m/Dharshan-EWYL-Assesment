@@ -12,15 +12,17 @@ let getData = ()=>{
     })
 }
 
-let printDetails =() =>{
-    let info = JSON.parse(localStorage.getItem('localdata'));
+printDetails = () => {
+    let info = JSON.parse(localStorage.getItem('localdata'))
     let user = info.map((result) =>{
         return ` 
-        <div class="container">
+        <div class="content-container">
         <img src=${result.picture.large} class="image"><br>
-        <p class="name">name : ${result.name.title} ${result.name.first}</p><br>
-        <p class="email">email : ${result.email}</p><br>
-        <p class="gender">gender : ${result.gender}</p><br>
+            <div class="main">
+                <p class="name">name : ${result.name.title} ${result.name.first}</p><br>
+                <p class="email">email : ${result.email}</p><br>
+                <p class="gender">gender : ${result.gender}</p><br>
+            </div>
         </div>`
     })
     document.querySelector('.container').innerHTML = user;
