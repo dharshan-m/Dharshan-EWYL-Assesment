@@ -1,7 +1,7 @@
 // document.querySelector('#root');
 
 let getData = ()=>{
-    fetch('https://randomuser.me/api/?results=10')
+    fetch('https://randomuser.me/api/?results=30')
     .then((data) =>{
         data.json()
         .then((display) =>{
